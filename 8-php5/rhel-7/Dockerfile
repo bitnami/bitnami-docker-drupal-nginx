@@ -8,7 +8,7 @@ ENV BITNAMI_PKG_CHMOD="-R g+rwX" \
 # Install required system packages and dependencies
 RUN install_packages bzip2-libs cyrus-sasl-lib freetype glibc gmp keyutils-libs krb5-libs libcom_err libcurl libgcc libgcrypt libgpg-error libicu libidn libjpeg-turbo libmemcached libpng libselinux libssh2 libstdc++ libxml2 libxslt ncurses-libs nspr nss nss-softokn-freebl nss-util openldap openssl-libs pcre postgresql-libs readline xz-libs zlib
 RUN bitnami-pkg unpack nginx-1.14.2-20 --checksum 10e7ce1e441ca0e949b16cb3a3f21338bd61fea074f62ad947aa135d5e824ef0
-RUN bitnami-pkg unpack php-7.1.26-1 --checksum 6010013512da02bfd74bf2c41a95e9b141458175698596a75ef5d51aef54189e
+RUN bitnami-pkg unpack php-5.6.40-0 --checksum 71afd496258065e7d5992e83749ce526fabd6074d15adc39d2dab53a385ef7b8
 RUN bitnami-pkg unpack mysql-client-10.1.38-0 --checksum fdd44abc2ff752b759ded1a7f27e334feed2be427a5850e2d21f2d093f3fee75
 RUN bitnami-pkg unpack drupal-8.6.10-0 --checksum 1fec91cfbe5e71c5e8e446f1501f80524f0d1ad84aa10838f58f0f515043bf6e
 RUN mkdir -p /opt/bitnami/php/logs && chown 1001 /opt/bitnami/php/logs && \
